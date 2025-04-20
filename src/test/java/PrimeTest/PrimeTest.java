@@ -1,6 +1,6 @@
 package PrimeTest;
 
-import org.example.Prime;
+import org.example.TP0.Prime;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 

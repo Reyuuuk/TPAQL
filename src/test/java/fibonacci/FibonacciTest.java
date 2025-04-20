@@ -1,6 +1,6 @@
 package fibonacci;
 
-import org.example.Fibonacci;
+import org.example.TP0.Fibonacci;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;

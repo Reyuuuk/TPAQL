@@ -3,7 +3,7 @@ package BankAccount;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.example.BankAccount;
+import org.example.TP0.BankAccount;
 
 class BankAccountTest {
     protected BankAccount account;

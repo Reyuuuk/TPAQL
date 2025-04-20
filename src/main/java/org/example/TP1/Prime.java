@@ -1,7 +1,6 @@
-package org.example;
+package org.example.tp1;
 
 public class Prime {
-
     public static boolean isPrime(int n) {
         if (n < 2) {
             return false;
