@@ -27,7 +27,7 @@ public class BankAccount {
         balance -= amount;
     }
 
-    public void transfer(double amount, BankAccount other) {
+    public void transfer(double amount, BankAccount other) throws NullPointerException {
         if (other == null) {
             throw new NullPointerException("Other account must not be
             null");
