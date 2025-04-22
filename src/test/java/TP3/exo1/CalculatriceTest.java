@@ -1,23 +1,54 @@
 package TP3.exo1;
 
-import org.example.TP2.exo1.Calculatrice;
+
+
+
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
 
-import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
+import static org.junit.Assert.*;
 
+@RunWith(MockitoJUnitRunner.class)
 public class CalculatriceTest {
 
+    @Mock
+    private Calculatrice calculatriceMock;
+
     @Test
-    public void testAdditionner() {
-        Calculatrice calculatrice = mock(Calculatrice.class);
+    public void testAdditionnerAvecMockito() {
 
-        when(calculatrice.additionner(2, 3)).thenReturn(5);
+        when(calculatriceMock.additionner(6, 1)).thenReturn(7);
 
-        int resultat = calculatrice.additionner(2, 3);
 
-        assertEquals(5, resultat);
-        verify(calculatrice).additionner(2, 3);
-        verifyNoMoreInteractions(calculatrice);
+        int resultat = calculatriceMock.additionner(6, 1);
+
+
+        assertEquals(7, resultat);
+
+        verify(calculatriceMock).additionner(6, 1);
+        verifyNoMoreInteractions(calculatriceMock);
+
+
+        when(calculatriceMock.getResult()).thenReturn(7);
+        assertEquals(7, calculatriceMock.getResult());
+        verify(calculatriceMock).getResult();
+    }
+
+    @Test
+    public void testAdditionnerAvecObjetReel() {
+
+        Calculatrice calculatrice = new Calculatrice();
+
+
+        int resultat = calculatrice.additionner(6, 1);
+
+
+        assertEquals(7, resultat);
+
+
+        assertEquals(7, calculatrice.getResult());
     }
 }
