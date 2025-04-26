@@ -1,4 +1,4 @@
-package userservice;
+package TP3.exo3.userservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,6 +37,21 @@ public class UserServiceTest {
         assertTrue(resultat);
     }
 
+    @Test(expected = ServiceException.class)
+    public void testCreerUtilisateur_Exception() throws ServiceException {
+
+        Utilisateur utilisateur = new Utilisateur("oussama", "zahali", "oussamazahali@gmail.com");
+
+
+        when(utilisateurApiMock.creerUtilisateur(utilisateur))
+                .thenThrow(new ServiceException(" l'utilisateur n' est pas cree "));
+
+
+        UserService userService = new UserService(utilisateurApiMock);
+
+
+        userService.creerUtilisateur(utilisateur);
+    }
     @Test(expected = ServiceException.class)
     public void testCreerUtilisateur_Exception() throws ServiceException {
 
