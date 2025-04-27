@@ -1,4 +1,4 @@
-package TP3.exo3.userservice;
+package TP0.TP3.exo3.userservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

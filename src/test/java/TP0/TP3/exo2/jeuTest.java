@@ -1,4 +1,4 @@
-package jeu;
+package TP0.TP3.exo2;
 
 import jeu.*;
 import org.junit.Before;
