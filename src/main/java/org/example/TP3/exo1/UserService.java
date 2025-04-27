@@ -10,4 +10,11 @@ public class UserService {
     public User getUserById(long id) {
         return userRepository.findUserById(id);
     }
+    public UserService(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    public User getUserById(long id) {
+        return userRepository.findUserById(id);
+    }
 }
