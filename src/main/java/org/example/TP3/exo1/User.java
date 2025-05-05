@@ -1,4 +1,4 @@
-package org.example.TP3.exo1;
+package org.example.com.EXO1;
 
 public class User {
     private long id;

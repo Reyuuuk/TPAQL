@@ -29,8 +29,7 @@ public class BankAccount {
 
     public void transfer(double amount, BankAccount other) throws NullPointerException {
         if (other == null) {
-            throw new NullPointerException("Other account must not be
-            null");
+            throw new NullPointerException("Other account must not b null");
         }
         withdraw(amount);
         other.deposit(amount);

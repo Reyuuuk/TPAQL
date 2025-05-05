@@ -1,4 +1,4 @@
-package StackTest;
+package TP0.StackTest;
 
 import org.example.TP0.Stack;
 import org.junit.jupiter.api.*;
