@@ -1,4 +1,4 @@
-package EXO2;
+package TP3.exo2;
 
 import org.example.com.EXO2.Order;
 import org.example.com.EXO2.OrderController;

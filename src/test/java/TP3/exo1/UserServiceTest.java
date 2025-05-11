@@ -1,4 +1,4 @@
-package EXO1;
+package TP3.exo1;
 
 import org.example.com.EXO1.User;
 import org.example.com.EXO1.UserRepository;

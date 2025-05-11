@@ -1,4 +1,4 @@
-package EXO3;
+package TP3.exo3;
 
 import org.example.com.EXO3.ApiException;
 import org.example.com.EXO3.Product;
